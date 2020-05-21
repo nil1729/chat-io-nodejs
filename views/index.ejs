@@ -1,0 +1,27 @@
+<%- include ('./partials/_header.ejs')  %> 
+    <div class="jumbotron jumbotron-fluid mt-0 p-2 text-center">
+        <h1 class="display-4">Chat App</h1>
+        <div class="container mb-3">
+            <hr class="my-3">
+            <p class="lead">A basic Chat App using NodeJS</p>
+        </div>
+        <% if(typeof error!= 'undefined'){ %>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong><%= error  %> </strong>
+            </div>
+        <% } %>  
+        <div class="container d-flex align-items-center justify-content-center">
+            <form action="/chat">
+                    <div class="form-group" style="width: 25rem;">
+                        <label for="name">Display Name</label>
+                        <input required type="text" placeholder="Name " name="username" id="displayName" class="form-control">
+                    </div>
+                    <div class="form-group" style="width: 25rem;">
+                        <label for="name">Room Name</label>
+                        <input required type="text" placeholder="Room" name="room" id="roomName" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success"style="width: 5rem">Join</button>
+            </form>
+        </div>
+    </div>
+<%- include ('./partials/_footer.ejs')  %> 

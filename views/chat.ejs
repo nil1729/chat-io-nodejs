@@ -1,0 +1,32 @@
+<%- include ('./partials/_header.ejs')  %> 
+    <div class="row">
+        <div class="col-md-4">
+            <div class="roomUsers container p-2">
+                <h1 class="lead text-danger">People Currently in Chat Room <span class="text-primary"  id="roomName"></span></h1>
+                <ul class="list-group">
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8 main">
+            <div class="main container bg-success chat-container p-0">
+                <button class="share-location-btn btn btn-primary text-light">
+                    Share Location
+                </button>
+                <div class="conatainer msg-container my-2">
+                   
+                </div>
+                <form class="form-inline" id="send-form">
+                    <div class="form-input form-group col-md-11">
+                      <input type="text" name="message" class="form-control col" id="text" placeholder="Type Message">
+                    </div>
+                    <div class="form-btn form-group col-md-1">
+                        <button type="submit" class="send-btn btn btn-danger form-control col" value="Send">Send</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div> 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <%- include ('./partials/_footer.ejs')  %> 
