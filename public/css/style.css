@@ -32,6 +32,10 @@ body{
 ::-webkit-scrollbar{
     width: 0;
 }
+.badge{
+    text-align: justify;
+    white-space: normal;
+}
 .form-inline{
     position: absolute;
     width: 100%;
