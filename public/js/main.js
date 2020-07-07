@@ -114,7 +114,6 @@ sendForm.addEventListener('submit', (e) => {
             scrollDown(msgContainer);
             //! Remove disable attr
             sendBtn.removeAttribute('disabled');
-            sendFormInput.focus();
         });
     }
 });
