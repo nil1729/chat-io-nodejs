@@ -1,89 +1,137 @@
-::selection{
-    color: rgb(76, 0, 255);
-    background-color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+::selection {
+	color: rgb(76, 0, 255);
+	background-color: aliceblue;
 }
-body{
-    overflow-x: hidden!important;
+
+* {
+	font-family: 'Ubuntu', sans-serif;
 }
-.chat-container{
-    height: 28rem;
-    position: relative;
-    overflow-y: scroll;
+
+body {
+	overflow-x: hidden !important;
 }
-.msg-container{
-    max-height: 22rem;
-    position: relative;
-    overflow-y: scroll;
+
+.chat-container {
+	height: 28rem;
+	position: relative;
+	overflow-y: scroll;
 }
-.msg{
-    width: fit-content;
-    max-width: 80%;
-    margin: 5px 0;
-    padding: 3px 6px;
-    border-radius: 10px;
+
+.msg-container {
+	max-height: 22rem;
+	position: relative;
+	overflow-y: scroll;
 }
-.msg p{
-    margin: 0!important;
+
+.msg {
+	width: fit-content;
+	max-width: 80%;
+	margin: 5px 0;
+	padding: 3px 6px;
+	border-radius: 10px;
 }
-.msg p .time{
-    font-size: 70%!important;
-    font-weight: 500!important;
+
+.msg p {
+	margin: 0 !important;
 }
-::-webkit-scrollbar{
-    width: 0;
+
+.msg p .time {
+	font-size: 70% !important;
+	font-weight: 500 !important;
 }
-.badge{
-    text-align: justify;
-    white-space: normal;
+
+::-webkit-scrollbar {
+	width: 0;
 }
-.form-inline{
-    position: absolute;
-    width: 100%;
-    bottom: 5px;
+
+.badge {
+	text-align: justify;
+	white-space: normal;
 }
-.form-inline .form-group{
-    margin: 0!important;
-    padding: 0!important;
+
+.form-inline {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
 }
-.list-group{
-    position: relative;
-    overflow-y: scroll;
-    height: 15rem;
-    border: 2px solid darkgray;
+
+.form-inline .form-group {
+	margin: 0 !important;
+	padding: 0 !important;
 }
-.form-input input{
-    margin-left: 5px;
+
+.list-group {
+	position: relative;
+	overflow-y: scroll;
+	height: 15rem;
+	border: 2px solid darkgray;
 }
-.form-btn button{
-    margin-left: 5px;
+
+.form-input input {
+	margin-left: 5px;
 }
-.main{
-    padding: 10px 20px;
+
+.form-btn button {
+	margin-left: 5px;
 }
-.roomUsers h1{
-    font-weight: 700;
+
+.main {
+	padding: 10px 20px;
 }
-.roomUsers h1 #roomName{
-    text-transform: capitalize;
+
+.roomUsers h1 {
+	font-weight: 700;
 }
-@media only screen and (max-width: 600px){
-    .main{
-        padding : 20px;
-        margin-bottom: 10px;
-    }
-    .form-input input{
-        margin: 0!important;
-    }
-    .form-inline{
-        position: absolute;
-        width: 100%;
-        bottom: 2px!important;
-        padding: 0 5px;
-    }
-    .form-inline .form-group:first-child{
-        width: 70%;
-    }
-    .form-inline .form-group:last-child{
-        width: 30%;
-    }
+
+.roomUsers h1 #roomName {
+	text-transform: capitalize;
+}
+#index-form {
+	width: 40%;
+}
+.alert.alert-danger {
+	width: 50%;
+}
+#about {
+	padding-left: 9px;
+	padding-right: 9px;
+}
+.send-btn {
+	margin-right: 4px;
+}
+@media only screen and (max-width: 600px) {
+	.main {
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+
+	.form-input input {
+		margin: 0 !important;
+	}
+
+	.form-inline {
+		position: absolute;
+		width: 100%;
+		bottom: 2px !important;
+		padding: 0 5px;
+	}
+
+	.form-inline .form-group:first-child {
+		width: 70%;
+	}
+
+	.form-inline .form-group:last-child {
+		width: 30%;
+	}
+	.send-btn {
+		margin-right: 0;
+	}
+	#index-form {
+		width: 90%;
+	}
+	.alert.alert-danger {
+		width: 100%;
+	}
 }
